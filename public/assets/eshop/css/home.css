@@ -10,19 +10,18 @@
     background: #FE980F;
 }
 
-.item {
-    padding-left: 100px;
-}
-
 .pricing {
     position: absolute;
     right: 40%;
     top: 52%;
 }
 
-.girl {
-    margin-left: 0;
-}
+.banner {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
 
 .item h1 {
     color: #B4B1AB;

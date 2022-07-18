@@ -8,7 +8,10 @@
 	<meta name="author" content="">
 	<title>Group 4 - Online Clothes Shop</title>
 	
+	<link href="<?php echo ASSETS . THEME ?>css/main.css" rel="stylesheet">
 	<link href="<?php echo ASSETS . THEME ?>css/font-awesome.min.css" rel="stylesheet">
+	<link href="<?php echo ASSETS . THEME ?>css/responsive.css" rel="stylesheet">
+	
 	<link href="<?php echo ASSETS . THEME ?>css/404.css" rel="stylesheet">
 	<link href="<?php echo ASSETS . THEME ?>css/cart.css" rel="stylesheet">
 	<link href="<?php echo ASSETS . THEME ?>css/checkout.css" rel="stylesheet">
@@ -18,8 +21,6 @@
 	<link href="<?php echo ASSETS . THEME ?>css/login.css" rel="stylesheet">
 	<link href="<?php echo ASSETS . THEME ?>css/products.css" rel="stylesheet">
 	<link href="<?php echo ASSETS . THEME ?>css/shop.css" rel="stylesheet">
-	<link href="<?php echo ASSETS . THEME ?>css/main.css" rel="stylesheet">
-	<link href="<?php echo ASSETS . THEME ?>css/responsive.css" rel="stylesheet">
 
 	<link rel="shortcut icon" href="images/ico/favicon.ico">
 </head>
