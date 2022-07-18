@@ -6,23 +6,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<title><?php $data['page_title'] ?>| Shop bán quần áo </title>
+	<title>Group 4 - Online Clothes Shop</title>
 	
+	<link href="<?php echo ASSETS . THEME ?>css/font-awesome.min.css" rel="stylesheet">
+	<link href="<?php echo ASSETS . THEME ?>css/404.css" rel="stylesheet">
+	<link href="<?php echo ASSETS . THEME ?>css/cart.css" rel="stylesheet">
+	<link href="<?php echo ASSETS . THEME ?>css/checkout.css" rel="stylesheet">
+	<link href="<?php echo ASSETS . THEME ?>css/footer.css" rel="stylesheet">
+	<link href="<?php echo ASSETS . THEME ?>css/header.css" rel="stylesheet">
+	<link href="<?php echo ASSETS . THEME ?>css/home.css" rel="stylesheet">
+	<link href="<?php echo ASSETS . THEME ?>css/login.css" rel="stylesheet">
+	<link href="<?php echo ASSETS . THEME ?>css/products.css" rel="stylesheet">
+	<link href="<?php echo ASSETS . THEME ?>css/shop.css" rel="stylesheet">
 	<link href="<?php echo ASSETS . THEME ?>css/main.css" rel="stylesheet">
 	<link href="<?php echo ASSETS . THEME ?>css/responsive.css" rel="stylesheet">
 
-	<!-- Custom styles for this template -->
-	<!-- <link href="<?= ASSETS . THEME ?>admin/css/style.css" rel="stylesheet">
-    <link href="<?= ASSETS . THEME ?>admin/css/style-responsive.css" rel="stylesheet"> -->
-	<!--[if lt IE 9]>
-    <script src="<?php echo ASSETS ?>eshop/js/html5shiv.js"></script>
-    <script src="<?php echo ASSETS ?>eshop/js/respond.min.js"></script>
-    <![endif]-->
 	<link rel="shortcut icon" href="images/ico/favicon.ico">
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo ASSETS ?>eshop/images/ico/apple-touch-icon-144-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo ASSETS ?>eshop/images/ico/apple-touch-icon-114-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo ASSETS ?>eshop/images/ico/apple-touch-icon-72-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" href="<?php echo ASSETS ?>eshop/images/ico/apple-touch-icon-57-precomposed.png">
 </head>
 <!--/head-->
 
@@ -36,10 +35,12 @@
 					<div class="col-sm-6">
 						<div class="contactinfo">
 							<ul class="nav nav-pills">
-								<li><a href="#"><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
-								<li><a href="#"><i class="fa fa-envelope"></i> info@domain.com</a></li>
+								<li><a href="#"><i class="fa fa-phone"></i> (+84) 98 999 9999</a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i> info@group4.com</a></li>
 								<?php if (isset($data['user_data'])) : ?>
-									<li><a href="#"><i class="fa fa-envelope"></i> <?= $data['user_data']->name ?></a></li>
+									<li><a href="#">
+										<i class="fa fa-user"></i> <b><?= $data['user_data']->name ?></b>
+									</a></li>
 								<?php endif; ?>
 							</ul>
 						</div>
@@ -66,7 +67,7 @@
 				<div class="row">
 					<div class="col-sm-4">
 						<div class="logo pull-left">
-							<a href="index"><img src="<?php echo ASSETS ?>eshop/images/home/1200px-Dolce_&_Gabbana.svg (1).png" style="width:149px;height:69px" alt="" /></a>
+							<a href="index"><img src="<?php echo ASSETS ?>eshop/images/home/Dolce_&_Banana.png" style="width:149px;height:69px" alt="" /></a>
 						</div>
 					
 					</div>

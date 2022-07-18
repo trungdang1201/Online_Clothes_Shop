@@ -2,70 +2,26 @@
 		<div class="footer-top">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-2">
-						<div class="companyinfo">
-							<h2>DOLCE-GABBANA</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor</p>
+					<div class="col-sm-3">
+						<div class="footer-info">
+							<h2>DOLCE & BANANA</h2>
+							<p>Always committing to quality and prestige, we brings you a minimalism lifestyle with our fashionate products.</p>
 						</div>
 					</div>
-					<div class="col-sm-7">
-						<div class="col-sm-3">
-							<div class="video-gallery text-center">
-								<a href="#">
-									<div class="iframe-img">
-										<img src="<?php echo ASSETS . THEME?>images/home/iframe1.png" alt="" />
-									</div>
-									<div class="overlay-icon">
-										<i class="fa fa-play-circle-o"></i>
-									</div>
-								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
+					<div class="col-sm-6">
+						<div class="col-sm-6">
+							<div class="footer-info">
+								<h2>ADDRESS</h2>
+								<p>Dai Co Viet, Hai Ba Trung, Ha Noi</p>
+								<h2>POLICY</h2>
+								<p>No Return</p>
 							</div>
 						</div>
-						
-						<div class="col-sm-3">
-							<div class="video-gallery text-center">
-								<a href="#">
-									<div class="iframe-img">
-										<img src="<?php echo ASSETS . THEME?>images/home/iframe2.png" alt="" />
-									</div>
-									<div class="overlay-icon">
-										<i class="fa fa-play-circle-o"></i>
-									</div>
-								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
-							</div>
-						</div>
-						
-						<div class="col-sm-3">
-							<div class="video-gallery text-center">
-								<a href="#">
-									<div class="iframe-img">
-										<img src="<?php echo ASSETS . THEME?>images/home/iframe3.png" alt="" />
-									</div>
-									<div class="overlay-icon">
-										<i class="fa fa-play-circle-o"></i>
-									</div>
-								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
-							</div>
-						</div>
-						
-						<div class="col-sm-3">
-							<div class="video-gallery text-center">
-								<a href="#">
-									<div class="iframe-img">
-										<img src="<?php echo ASSETS . THEME?>images/home/iframe4.png" alt="" />
-									</div>
-									<div class="overlay-icon">
-										<i class="fa fa-play-circle-o"></i>
-									</div>
-								</a>
-								<p>Circle of Hands</p>
-								<h2>24 DEC 2014</h2>
+						<div class="col-sm-4">
+							<div class="footer-info">
+								<h2>CONTACT</h2>
+								<p>Hotline: 098 999 9999</p>
+								<p>Email: info@group4.com</p>
 							</div>
 						</div>
 					</div>
@@ -85,7 +41,6 @@
 						<div class="single-widget">
 							<h2>Service</h2>
 							<ul class="nav nav-pills nav-stacked">
-								<li><a href="#">Contact Us</a></li>
 								<?php if(isset($data['user_data']) && $data['user_data']->rank == 'admin'): ?>
 									<li><a href="<?=ROOT?>admin">Admin</a></li>
 								<?php endif; ?>
@@ -119,12 +74,17 @@
 			</div>
 		</div>
 		
-		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left">Copyright © 2021 Dolce-Banana. All rights reserved.</p>
+					<p class="pull-right">Designed by Group 4</p>
+				</div>
+			</div>
+		</div>
 		
 	</footer><!--/Footer-->
 	
-
-  
     <script src="<?php echo ASSETS . THEME?>js/jquery.js"></script>
 	<script src="<?php echo ASSETS . THEME?>js/bootstrap.min.js"></script>
 	<script src="<?php echo ASSETS . THEME?>js/jquery.scrollUp.min.js"></script>
