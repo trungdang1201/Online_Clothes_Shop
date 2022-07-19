@@ -30,20 +30,20 @@
 								</td>
 								<td class="cart_description">
 									<h4><a href=""><?= $row->description; ?></a></h4>
-									<p>productID:<?= $row->id; ?></p>
+									<p>productID: <?= $row->id; ?></p>
 								</td>
 								<td class="cart_price">
-									<p><?= $row->price; ?>VNĐ</p>
+									<p><?= $row->price; ?> ₫</p>
 								</td>
 								<td class="cart_quantity">
 									<div class="cart_quantity_button">
-										<a class="cart_quantity_up" href="<?= ROOT ?>add_to_cart/add_quantity/<?= $row->id ?>"> + </a>
-										<input onchange="edit_quantity(this.value,'<?= $row->id ?>')" class="cart_quantity_input" type="text" name="quantity" value="<?= $row->cart_qty ?>" autocomplete="off" size="2">
 										<a class="cart_quantity_down" href="<?= ROOT ?>add_to_cart/subtract_quantity/<?= $row->id ?>"> - </a>
+										<input onchange="edit_quantity(this.value,'<?= $row->id ?>')" class="cart_quantity_input" type="text" name="quantity" value="<?= $row->cart_qty ?>" autocomplete="off" size="2">
+										<a class="cart_quantity_up" href="<?= ROOT ?>add_to_cart/add_quantity/<?= $row->id ?>"> + </a>
 									</div>
 								</td>
 								<td class="cart_total">
-									<p class="cart_total_price"><?= $row->price * $row->cart_qty ?>VNĐ</p>
+									<p class="cart_total_price"><?= $row->price * $row->cart_qty ?> ₫</p>
 								</td>
 								<td class="cart_delete">
 									<a class="cart_quantity_delete" delete_id="<?= $row->id ?>" onclick="delete_item(this.getAttribute('delete_id'));" href="<?= ROOT ?>add_to_cart/remove/<?= $row->id ?>"><i class="fa fa-times"></i></a>
@@ -51,20 +51,20 @@
 							</tr>
 						<?php endforeach; ?>
 					<?php else : ?>
-						<div style="text-align:center;padding:8px;color:red;">
-							<h2>Không tìm thấy sản phẩm</h2>
+						<div style="text-align:center;">
+							<h3>No Products In Cart</h3>
 						</div>
 					<?php endif; ?>
 
 				</tbody>
 			</table>
-			<div class="pull-right" style="font-size:25px">Tổng tiền:<?= $sub_total ?> VNĐ</div>
+			<div class="pull-right" style="font-size:25px; padding-top:5px">Total Price: <?= $sub_total ?> ₫</div>
 		</div>
 		<a href="<?=ROOT?>checkout">
-			<input type="button" class="btn btn-warning pull-right " value="Tiến hành Thanh Toán>" name="">
+			<input type="button" class="btn btn-warning pull-right " value="Checkout >" name="">
 		</a>
 		<a href="<?=ROOT?>shop">
-		<input type="button" class="btn btn-warning pull-left " value="<Tiếp tục mua sắm" name="">
+		<input type="button" class="btn btn-warning pull-left " value="< Continue shopping" name="">
 		</a>
 	</div>
 </section>

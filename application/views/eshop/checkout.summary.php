@@ -57,12 +57,12 @@
 									<h4>Order Summary</h4>
 									<table class="table">
 										<thead>
-											<tr><th>Qty</th><th>Description</th><th>Amount</th><th>Total</th></tr>
+											<tr><th>Qty</th><th>Item</th><th>Price</th><th>Total</th></tr>
 										</thead>	
 										<?php if(isset($order_details) && is_array($order_details)):?>
 											<?php foreach($order_details as $detail):?>
 												<tbody>
-													<tr><td><?=$detail->cart_qty?></td><td><?=$detail->description?></td><td><?=$detail->price?></td><td><?=($detail->cart_qty * $detail->price)?></td></tr>
+													<tr><td><?=$detail->cart_qty?></td><td><?=$detail->description?></td><td><?=$detail->price?> ₫</td><td><?=($detail->cart_qty * $detail->price)?> ₫</td></tr>
 												</tbody>
 													
 											<?php endforeach;?>
@@ -71,7 +71,7 @@
 											<div style="text-align: center;">No order details were found for this order</div>
 										<?php endif;?>
 									</table>
-									<h3 class="pull-right">Grand Total: <?=$sub_total?></h3>
+									<h3 class="pull-right">Grand Total: <?=$sub_total?> ₫</h3>
 								</div>
 					 
 					<?php endforeach;?>
@@ -91,6 +91,6 @@
 			</form>
 		</div>
 	</section> <!--/#cart_items-->
-
+<br><br>
 	
 <?php $this->view("footer",$data); ?>

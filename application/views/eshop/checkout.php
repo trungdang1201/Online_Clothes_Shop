@@ -94,6 +94,7 @@ if (isset($errors) && count($errors) > 0) {
 	</div>
 </section>
 <!--/#cart_items-->
+<br><br>
 
 
 <?php $this->view("footer", $data); ?>
