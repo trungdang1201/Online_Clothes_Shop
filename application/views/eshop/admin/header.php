@@ -13,9 +13,9 @@
     <!--external css-->
     <link href="<?=ASSETS . THEME ?>admin/font-awesome/css/font-awesome.css" rel="stylesheet" />
     
-    <link href="<?=ASSETS . THEME ?>admin/css/style.css" rel="stylesheet">
+    <link href="<?=ASSETS . THEME ?>admin/css/style1.css" rel="stylesheet">
     <link href="<?=ASSETS . THEME ?>admin/css/style-responsive.css" rel="stylesheet">
-    <link href="<?=ASSETS . THEME ?>admin/css/bootstrap.css" rel="stylesheet">
+    <!-- <link href="<?=ASSETS . THEME ?>admin/css/bootstrap.css" rel="stylesheet"> -->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>

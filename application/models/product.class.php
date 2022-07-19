@@ -233,7 +233,7 @@ Class Product
 
 		return $result;
 	}
-	
+
 	function str_to_url($url) {
 		$url = preg_replace('~[^\\pL0-9_]+~u', '-', $url);
 		$url = trim($url, "-");
@@ -242,5 +242,6 @@ Class Product
 		$url = preg_replace('~[^-a-z0-9_]+~', '', $url);
 		return $url;
 	 }
+	
 
 }

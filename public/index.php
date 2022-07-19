@@ -6,7 +6,7 @@
 
     define('ROOT',$path);
     define('ASSETS',$path . 'assets/');
-    include "../app/init.php";
+    include "../application/init.php";
     
     $app = new App();
 ?>

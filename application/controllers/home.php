@@ -1,7 +1,7 @@
 <?php
 
     Class Home extends Controller{
-        public function index(){
+         function index(){
             $user = $this->load_model('User');
             $image_class = $this->load_model('Image');
             $user_data=$user->check_login();
@@ -33,6 +33,7 @@
             $data['ROWS'] = $ROWS;
             $data['show_search'] = true;
             // show($_SESSION);
+            
             $this->view('index',$data);
         }
     }
