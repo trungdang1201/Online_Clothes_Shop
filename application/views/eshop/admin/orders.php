@@ -76,6 +76,8 @@
 
 		<tr><td colspan="8"><?php Page::show_links();?></td></tr>
 
+
+
 	</tbody>
 
 </table>

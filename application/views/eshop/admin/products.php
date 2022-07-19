@@ -39,7 +39,7 @@
  		}
  		
 	</style>
-
+			
 
                           <table class="table table-striped table-advance table-hover">
 	                  	  	  <h4><i class="fa fa-angle-right"></i> Products <button class="btn btn-secondary btn-xs" onclick="show_add_new(event)"><i class="fa fa-plus"></i> Add New</button></h4>
@@ -69,16 +69,29 @@
 			                              <div class="col-sm-10">
 			                              	<select id="category" name="category"  class="form-control" required>
 			                              		<option></option>
-			                              		<?php if(is_array($categories)): ?>
-				                              		<?php foreach($categories as $categ): ?>
-
-				                              			<option value="<?=$categ->id?>"><?=$categ->category?></option>
+			                              		<?php if(isset($categories)&&is_array($categories)): ?>
+				                              		<?php foreach($categories as $cat):
+															
+															$parents = array_column($categories, "parent");
+														
+														?>
+														
+														<?php if(in_array($cat->id, $parents)):?>
+															<?php foreach($categories as $sub_cat):?>
+																<?php if($sub_cat->parent == $cat->id):?>
+				                              						<option value="<?=$cat->id?>"><?=$sub_cat->category?>(<?=$cat->category?>)</option>
+																<?php else:?>
+																<?php endif;?>
+															<?php endforeach;?>
+														<?php else:?>
+														<?php endif;?>
+														
 				                              		<?php endforeach; ?>
 			                              		<?php endif; ?>
 			                              	</select>
  			                              </div>
 			                          </div>
-																
+						
 										<br><br style="clear: both;">
 			                          
 
