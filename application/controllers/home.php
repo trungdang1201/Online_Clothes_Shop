@@ -24,7 +24,8 @@
             $data['page_title'] ='Home';
             if($ROWS){
                 foreach($ROWS as $key=>$row){
-                    $ROWS[$key]->image = $image_class->get_thumb_post($ROWS[$key]->image);
+                    // $ROWS[$key]->image = $image_class->get_thumb_post($ROWS[$key]->image);
+                    $ROWS[$key]->image = $ROWS[$key]->image;
                 }
             }
 
