@@ -39,7 +39,7 @@ class Shop extends Controller
         $this->view('shop', $data);
     }
 
-    public function category($cat_find = '')
+    public function category($cat_id)
     {
         
         $limit = 10;
@@ -55,12 +55,6 @@ class Shop extends Controller
         }
 
         $DB = Database::newInstance();
-
-        $cat_id = null;
-        $check = $category->get_one_by_name($cat_find);
-        if (is_object($check)) {
-            $cat_id = $check->id;
-        }
         $ROWS = $DB->read("select * from products where category = :cat_id  limit $limit offset $offset ", ["cat_id" => $cat_id]);
 
         $data['page_title'] = "Shop";
@@ -82,7 +76,7 @@ class Shop extends Controller
         $this->view("shop", $data);
     }
 
-    public function products_parent_categogy($cat_find = '')
+    public function products_parent_categogy($cat_id)
     {
         
         $limit = 10;
@@ -98,12 +92,6 @@ class Shop extends Controller
         }
 
         $DB = Database::newInstance();
-
-        $cat_id = null;
-        $check = $category->get_one_by_name($cat_find);
-        if (is_object($check)) {
-            $cat_id = $check->id;
-        }
         $ROWS = $DB->read("select * from products where category in (select id from categories where parent = :cat_id) limit $limit offset $offset ", ["cat_id" => $cat_id]);
 
         $data['page_title'] = "Shop";

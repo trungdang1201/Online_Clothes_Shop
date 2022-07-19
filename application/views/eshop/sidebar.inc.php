@@ -29,10 +29,10 @@
 							<div id="<?=$cat->category?>" class="panel-collapse collapse">
 								<div class="panel-body">
 									<ul>
-										<li><a href="<?=ROOT . "shop/products_parent_categogy/" . $cat->category;?>">Tất cả</a></li>
+										<li><a href="<?=ROOT . "shop/products_parent_categogy/" . $cat->id;?>">Tất cả</a></li>
 										<?php foreach($categories as $sub_cat):?>
 											<?php if($sub_cat->parent == $cat->id):?>
-												<li><a href="<?=ROOT . "shop/category/" . $sub_cat->category;?>"><?=$sub_cat->category?></a></li>
+												<li><a href="<?=ROOT . "shop/category/" . $sub_cat->id;?>"><?=$sub_cat->category?></a></li>
 											<?php endif; ?>
 										<?php endforeach; ?>
 									</ul>
