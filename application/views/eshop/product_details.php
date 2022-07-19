@@ -131,7 +131,7 @@
 										<div class="product-image-wrapper">
 											<div class="single-products">
 												<div class="productinfo text-center">
-													<img src="<?php echo $ROWS[$i]->image ?>" alt="" />
+													<img src="<?php echo ROOT . $ROWS[$i]->image ?>" alt="" />
 													<h2><?= $ROWS[$i]->price ?> ₫</h2>
 													<p><?= $ROWS[$i]->description ?></p>
 													<a href="<?=ROOT?>add_to_cart/<?= $ROWS[$i]->id?>" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -148,7 +148,7 @@
 										<div class="product-image-wrapper">
 											<div class="single-products">
 												<div class="productinfo text-center">
-													<img src="<?php echo $ROWS[$i]->image ?>" alt="" />
+													<img src="<?php echo ROOT . $ROWS[$i]->image ?>" alt="" />
 													<h2><?= $ROWS[$i]->price ?> ₫</h2>
 													<p><?= $ROWS[$i]->description ?></p>
 													<a href="<?=ROOT?>add_to_cart/<?= $ROWS[$i]->id?>" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
