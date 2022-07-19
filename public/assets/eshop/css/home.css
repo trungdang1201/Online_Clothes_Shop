@@ -21,7 +21,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-  }
+}
 
 .item h1 {
     color: #B4B1AB;
@@ -324,6 +324,7 @@ h2.title {
     transition: height 500ms ease 0s;
     width: 100%;
     display: block;
+    opacity: ;
 }
 
 .single-products:hover .product-overlay {
@@ -485,6 +486,8 @@ h2.title {
 .recommended-item-control i:hover {
     background: #ccccc6;
 }
+
+.recommended_items h2 {}
 
 .our_partners {
     overflow: hidden;

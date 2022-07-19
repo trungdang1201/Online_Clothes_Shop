@@ -56,7 +56,7 @@
                       	 <!--end searchbox-->
 
 		<div class="shipping text-center"><!--shipping-->
-			<img src="<?= ASSETS . THEME ?>images/home/shipping.jpg" alt="" />
+			<img src="<?= ASSETS . THEME ?>images/home/shipping.png" alt="" />
 		</div><!--/shipping-->
 	
 	</div>
