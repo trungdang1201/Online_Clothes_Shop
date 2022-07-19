@@ -18,20 +18,25 @@
 								    <div class="carousel-inner">
 										<div class="item active">
 										  <a href=""><img src="<?=ROOT .$ROW->image?>" alt="" /></a>
-										 
 										</div>
+
+										<?php if ($ROW->image2): ?>
 										<div class="item">
 										<a href=""><img src="<?=ROOT .$ROW->image2?>" alt="" /></a>
-								
 										</div>
+										<?php endif; ?>
+
+										<?php if ($ROW->image3): ?>
 										<div class="item">
 										<a href=""><img src="<?=ROOT .$ROW->image3?>" alt="" /></a>
-									
 										</div>
+										<?php endif; ?>
+
+										<?php if ($ROW->image4): ?>
 										<div class="item">
 										<a href=""><img src="<?=ROOT .$ROW->image4?>" alt="" /></a>
-									
 										</div>
+										<?php endif; ?>
 									</div>
 
 								  <!-- Controls -->
