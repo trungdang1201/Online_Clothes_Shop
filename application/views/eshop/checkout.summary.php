@@ -84,10 +84,10 @@
 	<?php endif;?>
 			<hr style="clear: both;">
 			<a href="<?=ROOT?>checkout">
-				<input type="button" class="btn btn-warning pull-left" value="< Back to checkout" name="">
+				<input type="button" class="btn btn-primary pull-left" value="< Back to checkout" name="">
 			</a>
 			<form method="post">
-				<input type="submit" class="btn btn-warning pull-right" value="Pay >" name="">
+				<input type="submit" class="btn btn-primary pull-right" value="Pay >" name="">
 			</form>
 		</div>
 	</section> <!--/#cart_items-->

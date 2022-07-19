@@ -76,7 +76,7 @@ if (isset($errors) && count($errors) > 0) {
 						</div>
 					</div>
 
-					<input type="submit" class="btn btn-warning pull-right" value="Continue >" name="">
+					<input type="submit" class="btn btn-primary pull-right" value="Continue >" name="">
 
 				</div>
 			</form>
@@ -89,7 +89,7 @@ if (isset($errors) && count($errors) > 0) {
 		<?php endif; ?>
 
 		<a href="<?= ROOT ?>cart">
-			<input type="button" class="btn btn-warning pull-left" value="< Back to cart" name="">
+			<input type="button" class="btn btn-primary pull-left" value="< Back to cart" name="">
 		</a>
 	</div>
 </section>

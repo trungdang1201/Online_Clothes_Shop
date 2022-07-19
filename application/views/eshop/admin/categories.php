@@ -41,7 +41,7 @@
                   <div class="col-md-12">
                       <div class="content-panel">
                           <table class="table table-striped table-advance table-hover">
-	                  	  	  <h4><i class="fa fa-angle-right"></i> Product Categories <button class="btn btn-primary btn-xs" onclick="show_add_new(event)"><i class="fa fa-plus"></i> Add New</button></h4>
+	                  	  	  <h4><i class="fa fa-angle-right"></i> Product Categories <button class="btn btn-secondary btn-xs" onclick="show_add_new(event)"><i class="fa fa-plus"></i> Add New</button></h4>
 	                  	  	  
 	                  	  	  <!--add new category-->
 	                  	  	  <div class="add_new hide">
@@ -73,8 +73,8 @@
 			                              </div>
 			                          </div>
 
-               	  	  					<button type="button" class="btn btn-warning" onclick="show_add_new(event)" style="position:absolute;bottom:10px; left:10px;">Close</button>
-              	  	  					<button type="button" class="btn btn-primary" onclick="collect_data(event)" style="position:absolute;bottom:10px; right:10px;">Save</button>
+               	  	  					<button type="button" class="btn btn-primary" onclick="show_add_new(event)" style="position:absolute;bottom:10px; left:10px;">Close</button>
+              	  	  					<button type="button" class="btn btn-secondary" onclick="collect_data(event)" style="position:absolute;bottom:10px; right:10px;">Save</button>
 			                   
 			                      </form>
  					           
@@ -109,8 +109,8 @@
 			                              </div>
 			                          </div>
 
-              	  	  					<button type="button" class="btn btn-warning" onclick="	show_edit_category(0,'',false);" style="position:absolute;bottom:10px; left:10px;">Cancel</button>
-              	  	  					<button type="button" class="btn btn-primary" onclick="collect_edit_data(event)" style="position:absolute;bottom:10px; right:10px;">Save</button>
+              	  	  					<button type="button" class="btn btn-primary" onclick="	show_edit_category(0,'',false);" style="position:absolute;bottom:10px; left:10px;">Cancel</button>
+              	  	  					<button type="button" class="btn btn-secondary" onclick="collect_edit_data(event)" style="position:absolute;bottom:10px; right:10px;">Save</button>
 			                   
 			                      </form>
  					           

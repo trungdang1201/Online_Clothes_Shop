@@ -222,7 +222,7 @@ Class Product
 	                  <td></td>
 	                  <td>
 	                      
-	                      <button info="'.$info.'" onclick="show_edit_product('.$edit_args.',event)" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
+	                      <button info="'.$info.'" onclick="show_edit_product('.$edit_args.',event)" class="btn btn-secondary btn-xs"><i class="fa fa-pencil"></i></button>
 	                      <button onclick="delete_row('.$cat_row->id.')" class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
 	                  </td>
 					';

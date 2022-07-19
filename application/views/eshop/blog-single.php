@@ -365,7 +365,7 @@
 									<li><a href=""><i class="fa fa-dribbble"></i></a></li>
 									<li><a href=""><i class="fa fa-google-plus"></i></a></li>
 								</ul>
-								<a class="btn btn-primary" href="">Other Posts</a>
+								<a class="btn btn-secondary" href="">Other Posts</a>
 							</div>
 						</div>
 					</div><!--Comments-->
@@ -384,7 +384,7 @@
 										<li><i class="fa fa-calendar"></i> DEC 5, 2013</li>
 									</ul>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-									<a class="btn btn-primary" href=""><i class="fa fa-reply"></i>Replay</a>
+									<a class="btn btn-secondary" href=""><i class="fa fa-reply"></i>Replay</a>
 								</div>
 							</li>
 							<li class="media second-media">
@@ -398,7 +398,7 @@
 										<li><i class="fa fa-calendar"></i> DEC 5, 2013</li>
 									</ul>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-									<a class="btn btn-primary" href=""><i class="fa fa-reply"></i>Replay</a>
+									<a class="btn btn-secondary" href=""><i class="fa fa-reply"></i>Replay</a>
 								</div>
 							</li>
 							<li class="media">
@@ -412,7 +412,7 @@
 										<li><i class="fa fa-calendar"></i> DEC 5, 2013</li>
 									</ul>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-									<a class="btn btn-primary" href=""><i class="fa fa-reply"></i>Replay</a>
+									<a class="btn btn-secondary" href=""><i class="fa fa-reply"></i>Replay</a>
 								</div>
 							</li>
 						</ul>					
@@ -445,7 +445,7 @@
 									</div>
 									<span>*</span>
 									<textarea name="message" rows="11"></textarea>
-									<a class="btn btn-primary" href="">post comment</a>
+									<a class="btn btn-secondary" href="">post comment</a>
 								</div>
 							</div>
 						</div>

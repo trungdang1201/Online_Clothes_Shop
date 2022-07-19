@@ -58,7 +58,7 @@ function is_paid($order){
 		return "<button class='btn btn-success'>Paid</button>";
 	}
 
-	return "<button class='btn btn-warning'>Not Paid</button>";
+	return "<button class='btn btn-primary'>Not Paid</button>";
 }
 
 function is_paid_bol($order){

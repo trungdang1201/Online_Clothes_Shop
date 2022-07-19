@@ -113,7 +113,7 @@ Class Category
 	                  <td><span  onclick="disable_row('.$args.')"  class="label label-info label-mini" style="cursor:pointer;background-color:'.$color.';">'.$cat_row->disabled.'</span></td>
 	                  <td>
 	                      
-	                      <button onclick="show_edit_category('.$edit_args.',event)" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
+	                      <button onclick="show_edit_category('.$edit_args.',event)" class="btn btn-secondary btn-xs"><i class="fa fa-pencil"></i></button>
 	                      <button onclick="delete_row('.$cat_row->id.')" class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
 	                  </td>
 					';
