@@ -1,8 +1,6 @@
 <?php
-
     Class Product_details extends Controller{
         public function index($slag){
-
             $slag = esc($slag);
             $user = $this->load_model('User');
             $user_data=$user->check_login();
@@ -16,7 +14,10 @@
             $data['ROW'] = is_array($ROW) ? $ROW[0]:false;
             $category = $this->load_model('Category');
             $data['categories'] = $category->get_all();
-           $this->view('product_details',$data);
+            $ROWS = $DB->read("select * from products");
+            $data['ROWS'] = $ROWS;
+            $this->view('product_details',$data);
+
         }
     }
 ?>
