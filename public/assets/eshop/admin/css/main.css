@@ -75,10 +75,15 @@ input {
   line-height: normal;
 }
 
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
 table {
   border-spacing: 0;
   border-collapse: collapse;
 }
+
 td,
 th {
   padding: 0;
@@ -251,6 +256,7 @@ ol {
   .col-sm-2 {
     width: 16.66666667%;
   }
+}
   
 @media (min-width: 992px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
@@ -308,8 +314,6 @@ th {
   background-color: #fff;
 }
 
-
-
 .table-striped > tbody > tr:nth-child(odd) > td,
 .table-striped > tbody > tr:nth-child(odd) > th {
   background-color: #f9f9f9;
@@ -326,6 +330,32 @@ label {
   font-weight: bold;
 }
 
+input[type="file"] {
+  display: block;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #777;
+}
 
 .form-group {
   margin-bottom: 15px;
@@ -508,5 +538,3 @@ label {
   background-color: #428bca;
   border-color: #428bca;
 }
-
-
